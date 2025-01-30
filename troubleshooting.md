@@ -1,0 +1,1 @@
+After reviewing my commit history, the only issues I've encountered were not seeing pull requests made from my partner and the suggestions.md file he created on my side of the repository. The way I handled this was discussing the issues with him and finding the pull request afterwards.
