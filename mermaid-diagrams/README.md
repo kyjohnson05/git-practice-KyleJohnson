@@ -1,4 +1,13 @@
 # Pokemon Card Storage Web App
+### Core Features
+In the Pokemon Card Storage Web App, users will be able to collect Pokemon cards to assemble their very own decks and even submit new cards under administrative approval!
+
+#### User Stories
+"I can finally study Pokemon moves to build strategies before battling!" - Anonymous User #1
+"My siblings always teased that I never had any legendaries, but now I could make a full deck of them here!" - Anonymous User #2
+"It's an easier way to introduce my grandpa to Pokemon!" - Anonymous User #3
+
+---
 ## 1. Entity-Relationship Diagram (ERD)
 ```mermaid
 erDiagram
