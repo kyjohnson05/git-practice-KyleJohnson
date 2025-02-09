@@ -56,6 +56,9 @@ graph TD
 A[User] -->|HTTP Request| B[Frontend UI]
 B -->|API Request| C[Backend API]
 C -->|Data Query/Update| D[(Database)]
+D --> C
+C --> B
+B --> A
 E[Admin] -->|HTTP Request| F[Admin Dashboard]
 F -->|API Request| C
 subgraph Access Control
