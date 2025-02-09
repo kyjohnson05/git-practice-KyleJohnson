@@ -45,7 +45,7 @@ H --> I -->|Approve| K[Visible Card]
 H --> I -->|Deny| P[Hidden Card]
 J --> O[Submit Deck]
 K --> L[Card Database]
-L --> M
+M --> L
 N --> L
 O --> Q[End]
 ```
