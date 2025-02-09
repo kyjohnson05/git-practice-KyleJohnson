@@ -53,13 +53,33 @@ O --> Q[End]
 ## 3. System Architecture Diagram
 ```mermaid
 graph TD
-A[User] --|HTTP Request| B[Frontend UI]
-B --|API Request| C[Backend API]
-C --|Data Query/Update| D[(Database)]
-E[Admin] --|HTTP Request| F[Admin Dashboard]
-F --|API Request| C
+A[User] -->|HTTP Request| B[Frontend UI]
+B -->|API Request| C[Backend API]
+C -->|Data Query/Update| D[(Database)]
+D --> C
+C --> B
+B --> A
+E[Admin] -->|HTTP Request| F[Admin Dashboard]
+F -->|API Request| C
 subgraph Access Control
 C --- G[User Deck Management]
 C --- H[Admin Card Management]
 end
+```
+---
+## 4. API Endpoints Table
+```mermaid
+classDiagram
+class "API Endpoints" {
+GET /api/cards : Fetch all cards
+POST /api/cards : Submit new card (User)
+PUT /api/cards/:id : Modify card (Admin)
+DELETE /api/cards/:id : Delete card (Admin)
+GET /api/user/decks : Fetch all decks (User)
+POST /api/user/decks : Create new deck (User)
+PUT /api/decks/:id : Manage deck (User)
+DELETE /api/decks/:id : Delete deck (User)
+GET /api/admin/cards : Fetch pending cards (Admin)
+PUT /api/admin/cards/:id/approve : Approve card (Admin)
+}
 ```
