@@ -26,16 +26,7 @@ def play_game():
     display_board(board)
     for turn_amount in range(9):
         current_player = display_team[turn_amount % 2]
-        while 1:
-            try:
-                row, column = map(int, input(f"P {current_player}, row col (0-2): ").split())
-                if board[row][column] == " ":
-                    board[row][column] = current_player
-                    break
-                else:
-                    print("Nope. Again.")
-            except ValueError:
-                print("Wrong. 0-2 pls.")
+        get_player_move(board, current_player)
         display_board(board)
         if win(board, current_player):
             print(f"P {current_player} wins!")
@@ -44,6 +35,19 @@ def play_game():
             print("Draw!")
             return
     print("Draw!")
+
+
+def get_player_move(board, current_player):
+    while 1:
+        try:
+            row, column = map(int, input(f"P {current_player}, row col (0-2): ").split())
+            if board[row][column] == " ":
+                board[row][column] = current_player
+                break
+            else:
+                print("Nope. Again.")
+        except ValueError:
+            print("Wrong. 0-2 pls.")
 
 
 play_game()
