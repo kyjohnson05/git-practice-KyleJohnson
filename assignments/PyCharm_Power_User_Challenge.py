@@ -6,9 +6,11 @@ def display(board):
 
 def win(board, display):
     for row_index in range(3):
-        if all(board[row_index][col_index] == display for col_index in range(3)) or all(board[col_index][row_index] == display for col_index in range(3)):
+        if all(board[row_index][col_index] == display for col_index in range(3)) or all(
+                board[col_index][row_index] == display for col_index in range(3)):
             return True
-    if all(board[row_index][row_index] == display for row_index in range(3)) or all(board[row_index][2 - row_index] == display for row_index in range(3)):
+    if all(board[row_index][row_index] == display for row_index in range(3)) or all(
+            board[row_index][2 - row_index] == display for row_index in range(3)):
         return True
     return False
 
