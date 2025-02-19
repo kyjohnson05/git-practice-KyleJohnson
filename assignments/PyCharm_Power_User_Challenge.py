@@ -1,10 +1,24 @@
 def display_board(board):
+    """
+
+    :param board:
+    :type board:
+    """
     for row in board:
         print(" | ".join(row))
         print("-" * 5)
 
 
 def win(board, player):
+    """
+
+    :param board:
+    :type board:
+    :param player:
+    :type player:
+    :return:
+    :rtype:
+    """
     for row_index in range(3):
         if all(board[row_index][col_index] == player for col_index in range(3)) or all(
                 board[col_index][row_index] == player for col_index in range(3)):
@@ -16,10 +30,22 @@ def win(board, player):
 
 
 def full(board):
+    """
+
+    :param board:
+    :type board:
+    :return:
+    :rtype:
+    """
     return all(column != " " for row in board for column in row)
 
 
 def play_game():
+    """
+
+    :return:
+    :rtype:
+    """
     board = [[" " for _ in range(3)] for _ in range(3)]
     display_team = ["X", "O"]
     print("Tic-Tac-Toe Game")
@@ -38,6 +64,13 @@ def play_game():
 
 
 def get_player_move(board, current_player):
+    """
+
+    :param board:
+    :type board:
+    :param current_player:
+    :type current_player:
+    """
     while 1:
         try:
             row, column = map(int, input(f"P {current_player}, row col (0-2): ").split())
