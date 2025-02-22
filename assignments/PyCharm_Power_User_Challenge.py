@@ -1,9 +1,8 @@
 def display_board(board):
     """
-    Display the current state of the Tic-Tac-Toe board.
 
-    :param board: A 3x3 list representing the game board
-    :type board: list of lists
+    :param board:
+    :type board:
     """
     for row in board:
         print(" | ".join(row))
@@ -12,14 +11,13 @@ def display_board(board):
 
 def win(board, player):
     """
-    Check if the current player has won the game.
 
-    :param board: A 3x3 list representing the game board
-    :type board: list of lists
-    :param player: The current player's symbol ('X' or 'O')
-    :type player: str
-    :return: True if the player has won, False otherwise
-    :rtype: bool
+    :param board:
+    :type board:
+    :param player:
+    :type player:
+    :return:
+    :rtype:
     """
     for row_index in range(3):
         if all(board[row_index][col_index] == player for col_index in range(3)) or all(
@@ -33,21 +31,17 @@ def win(board, player):
 
 def full(board):
     """
-    Check if the game board is completely filled.
 
-    :param board: A 3x3 list representing the game board
-    :type board: list of lists
-    :return: True if the board is full, False otherwise
-    :rtype: bool
+    :param board:
+    :type board:
+    :return:
+    :rtype:
     """
     return all(column != " " for row in board for column in row)
 
 
 def play_game():
     """
-    Main function to play the Tic-Tac-Toe game.
-
-    This function initializes the game, manages turns, and determines the game outcome.
 
     :return:
     :rtype:
@@ -71,16 +65,15 @@ def play_game():
 
 def get_player_move(board, current_player):
     """
-    Get and validate the current player's move.
 
-    :param board: A 3x3 list representing the game board
-    :type board: list of lists
-    :param current_player: The current player's symbol ('X' or 'O')
-    :type current_player: str
+    :param board:
+    :type board:
+    :param current_player:
+    :type current_player:
     """
     while 1:
         try:
-            row, column = map(int, input(f"Player {current_player}, enter row and column (0-2): ").split())
+            row, column = map(int, input(f"P {current_player}, row col (0-2): ").split())
             if board[row][column] == " ":
                 board[row][column] = current_player
                 break
