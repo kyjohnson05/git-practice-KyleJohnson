@@ -10,13 +10,13 @@ While working on this project, I learned that forking a repository is like obtai
 Overall, it wasn't too difficult to find someone to collaborate with as one of my classmates happens to be someone I'm already familiar with and have worked with before in previous tech-related circumstances. Due to this advantage, my partner and I were able to communicate effectively both virtually and face-to-face about any concerns involving our parts in each other's repositories and clear up any misunderstandings made about the assignment. Despite both of us not being available immediately, we still managed to find time to discuss sharing invitations, pull requests, and feedback files.
 # Test Format
 1. Tree
-   1. Apple
+   1.1. Apple
 2. Banana
-   1. Butterfly
-   2. Pineapple
+      1. Butterfly
+      2. Pineapple
 3. White
-   1. Goat
-      1. Yellow
-      2. Eat
+      1. Goat
+         1. Yellow
+         2. Eat
    2. Umbrella
-     1. Yogurt
+        1. Yogurt
