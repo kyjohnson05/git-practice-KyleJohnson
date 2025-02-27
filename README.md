@@ -8,15 +8,3 @@ I can see the future in my sleep and forget about the dream until the event happ
 While working on this project, I learned that forking a repository is like obtaining an editable copy of another owner's repository rather than just gaining direct access to the original as I initially thought it was. I also learned that you can't revert commits on the GitHub website unlike on GitHub Desktop and that it's best to thoroughly plan the project ahead before committing anything to keep it organized.
 # My Collaboration Experience with the Git Project:
 Overall, it wasn't too difficult to find someone to collaborate with as one of my classmates happens to be someone I'm already familiar with and have worked with before in previous tech-related circumstances. Due to this advantage, my partner and I were able to communicate effectively both virtually and face-to-face about any concerns involving our parts in each other's repositories and clear up any misunderstandings made about the assignment. Despite both of us not being available immediately, we still managed to find time to discuss sharing invitations, pull requests, and feedback files.
-# Test Format
-1. Tree
-   1.1. Apple
-2. Banana
-      1. Butterfly
-      2. Pineapple
-3. White
-      1. Goat
-         1. Yellow
-         2. Eat
-   2. Umbrella
-        1. Yogurt
