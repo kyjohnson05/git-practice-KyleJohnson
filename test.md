@@ -1,6 +1,6 @@
 #### 1. Create your account!
-    1. Click "Create Account" and create a username
-    2. Login with your username
+1. Click "Create Account" and create a username
+2. Login with your username
 
 #### 2. Find books!
 * Go to "Add New Book" to manually add a book to your bookshelf
