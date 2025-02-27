@@ -1,9 +1,11 @@
 1. Create your account!
     1. Click "Create Account" and create a username
     2. Login with your username
+
 2. Find books!
 * Go to "Add New Book" to manually add a book to your bookshelf
 * Go to "Search Books" to find any book by its title or author
+
     * Ex. Search "Stephen King" to find all of his books
     * Ex. Search "Twilight" to find the specific book itself
 * If you have read the book before, check "Have you read this book?"
