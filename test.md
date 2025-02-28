@@ -8,19 +8,19 @@ Stay on top of your reading progress with our intuitive app. Add books to your c
 
 ### Required Features:
 * Include a search bar to find books by title or author
-* The ability to add books from the homepage to users' bookshelves
+* The ability to add books to users' bookshelves
 * The ability to delete books from the users' bookshelves
-* The ability to edit book details
+* The ability to manually edit book details in bookshelves
 
 ### Should Have Features:
-* The ability to favorite a book on the homepage
+* The ability to favorite a book in users' bookshelves
 * Include a favorites page that displays users' favorite books
 * The ability to mark books as "Have read", "Not read", or "Currently reading"
 
 ### Nice To Have Features:
-* Citations included in book details
+* Include citations within book details
 * The ability to share bookshelves with others
-* Include recommended books that are displayed on the homepage
+* Display recommended books in users' bookshelves
 ---
 ## User Stories
 
@@ -82,7 +82,6 @@ E --> K[Add To Bookshelf]
 E --> G
 F --> J
 H --> F
-F --> A
 I --> A
 J --> A
 K --> A
