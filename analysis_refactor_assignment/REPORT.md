@@ -3,12 +3,12 @@
 ## Static Analysis
  
 **flake8**:
-- Line 1: unused import `math`
-- Line 3: unused import `random`
+- Line 1: unused import `math` (removed)
+- Line 3: unused import `random` (removed)
  
 **pylint**:
-- Function `slow_func` could be simplified
-- `unused_function` never used
+- Function `slow_func` could be simplified (rewritten with list comprehension)
+- `unused_function` never used (removed)
  
 ## Line Profiling
  
@@ -17,17 +17,16 @@ Bottleneck found in:
  
 ### Fix:
 - Replaced loop with arithmetic formula
-- Also tested with `lru_cache` — significant speedup
  
 ## Code Coverage
  
-- Coverage before: ~60%
-- Coverage after: ~85%
+- Coverage before: ~62%
+- Coverage after: ~71%
 - `unused_function()` was not covered, removed
  
 ## Fix Summary
  
-- Removed dead code and unused imports
+- Removed unused imports and functions
 - Rewrote `expensive_op` using a math formula
-- Simplified loop using list comprehension
+- Rewrote `slow_func` using list comprehension
 - Confirmed coverage and performance improvements
