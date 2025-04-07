@@ -1,6 +1,3 @@
-import math
-import random
- 
 def expensive_op(n):
     total = 0
     for i in range(1000):
